@@ -1,0 +1,28 @@
+{
+  "name": "spacerace",
+  "version": "1.0.0",
+  "description": "Videgame using three.js",
+  "main": "server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "webpack": "^4.41.2",
+    "xss-escape": "0.0.6"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "start": "cd spacerace-v2 && npm run build && cd .. && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmarie4/spacerace.git"
+  },
+  "author": "Max MARIE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmarie4/spacerace/issues"
+  },
+  "homepage": "https://github.com/mmarie4/spacerace#readme"
+}
