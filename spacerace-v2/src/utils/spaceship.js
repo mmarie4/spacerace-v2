@@ -14,7 +14,7 @@ export const spaceship = {
     group.accel = { x: 0, y: 0, z: 0 };
     group.rotAccel = { x: 0, y: 0, z: 0 };
     group.rotSpeed = { x: 0, y: 0, z: 0 };
-    group.force = { x: 0, y: 0, z: 100 };
+    group.force = { x: 0, y: 0, z: 0 };
     group.lastBoost = new Date();
     group.hitbox = new THREE.Box3(new THREE.Vector3(), new THREE.Vector3());
     group.move = function() {
@@ -36,7 +36,7 @@ export const spaceship = {
           : this.leftPressed
           ? -1 * (stats.force_x + this.boostForce)
           : 0;
-      this.force.z = stats.force_z;
+
       engine.translate(this);
       // Reinit boost
       this.boostForce = 0;

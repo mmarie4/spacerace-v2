@@ -32,9 +32,17 @@ const constants = {
   SPAWN_FREQ_FAR: 0.2,
   NUMBER_OF_POP: 10,
   // Enemy
+  ENEMY_STATS: {
+    max_speed: { x: 30, y: 15, z: 50 },
+    mass: 50,
+    speed: { x: 0, y: 0, z: 0 },
+    accel: { x: 0, y: 0, z: 0 },
+    rotAccel: { x: 0, y: 0, z: 0 },
+    rotSpeed: { x: 0, y: 0, z: 0 }
+  },
   ENEMIES_SPEED_Z: 15,
-  ENEMIES_KPX: 0.4,
-  ENEMIES_KPY: 0.1,
+  ENEMIES_KPX: 3,
+  ENEMIES_KPY: 1.5,
   BORDER_ENEMIES: 20,
   AIM_ENEMY_Y: 5,
   LIMIT_AIM: 0,

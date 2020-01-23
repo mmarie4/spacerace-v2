@@ -148,14 +148,13 @@ export default {
     },
 
     pop(limit) {
-      let newEnemy = enemy.create(
-        this.ship.position.x + Math.random() * limit - limit / 2,
-        this.ship.position.y + Math.random() * limit - limit / 2,
-        constants.SPAWN_Z,
-        constants.ENEMIES_SPEED_Z,
-        this.scene,
-        this.models
-      );
+      let newEnemy = enemy.create({
+        x: this.ship.position.x + Math.random() * limit - limit / 2,
+        y: this.ship.position.y + Math.random() * limit - limit / 2,
+        z: constants.SPAWN_Z,
+        stats: constants.ENEMY_STATS,
+        models: this.models
+      });
       this.enemies.push(newEnemy);
       this.scene.add(newEnemy);
     }
